@@ -6,7 +6,7 @@ export default function Research() {
   return (
     <section id="research" className="py-20 bg-white border-t border-slate-200/80">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Heading */}
         <div className="max-w-2xl mx-auto text-center mb-14">
           <span className="text-xs font-bold uppercase tracking-wider text-purple-600 bg-purple-50 px-3 py-1 rounded-full border border-purple-100">

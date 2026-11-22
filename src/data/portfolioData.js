@@ -1,4 +1,3 @@
-import banishFullImg from '../assets/banishfull.png';
 import banishHalfImg from '../assets/banishhalf.png';
 
 export const personalInfo = {
@@ -20,27 +19,6 @@ export const personalInfo = {
 };
 
 export const heroPresentations = [
-  {
-    id: "practical-skills",
-    badge: "AI & Digital Skills Education",
-    heading: "Learn AI to Thrive in Studies and Beyond.",
-    highlightText: "Thrive in Studies",
-    subtitle: "Hands-on training for school students in modern AI tools, Canva design, CapCut video editing, and everyday computer skills. Choose 12, 24, or 48 hours and finish with work you can proudly show.",
-    image: banishFullImg,
-    imageAlt: "Mohammed Banish - Full length portrait",
-    imageType: "full",
-    tagline: "Full-Length Showcase",
-    keyHighlights: [
-      "School & CBSE Aligned",
-      "No Paid Software Needed",
-      "1-on-1 & Small Batches",
-      "Personal Project Portfolio"
-    ],
-    primaryCtaText: "Explore Packages",
-    primaryCtaLink: "#packages",
-    secondaryCtaText: "Book Free Demo",
-    secondaryCtaLink: "#contact",
-  },
   {
     id: "future-ready",
     badge: "Future-Ready Mentorship",

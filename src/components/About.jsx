@@ -15,10 +15,10 @@ export default function About() {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Two-column layout matching the original template */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
-          
+
           {/* Left Column: Bio & Impact Numbers */}
           <div className="lg:col-span-6 flex flex-col justify-between">
             <div>
@@ -103,7 +103,7 @@ export default function About() {
 
               {/* Education & Experience Timeline */}
               <div className="mt-8 relative border-l-2 border-indigo-200 pl-6 sm:pl-8 space-y-7">
-                
+
                 {/* M.Sc. */}
                 <div className="relative">
                   <div className="absolute -left-[31px] sm:-left-[39px] top-1 w-4 h-4 rounded-full bg-indigo-600 border-4 border-white shadow-xs"></div>

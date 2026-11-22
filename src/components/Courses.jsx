@@ -18,7 +18,7 @@ export default function Courses() {
   return (
     <section id="packages" className="py-20 bg-white border-y border-slate-200/80">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Heading */}
         <div className="max-w-2xl mx-auto text-center mb-14">
           <span className="text-xs font-bold uppercase tracking-wider text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-100">
@@ -39,11 +39,10 @@ export default function Courses() {
             return (
               <div
                 key={pkg.id}
-                className={`relative flex flex-col rounded-3xl transition-all duration-300 ${
-                  isPopular
-                    ? 'bg-slate-900 text-white shadow-xl shadow-indigo-900/10 ring-2 ring-indigo-500 scale-[1.02] md:-translate-y-2'
-                    : 'bg-white text-slate-900 border border-slate-200 shadow-sm hover:shadow-md hover:border-slate-300'
-                }`}
+                className={`relative flex flex-col rounded-3xl transition-all duration-300 ${isPopular
+                  ? 'bg-slate-900 text-white shadow-xl shadow-indigo-900/10 ring-2 ring-indigo-500 scale-[1.02] md:-translate-y-2'
+                  : 'bg-white text-slate-900 border border-slate-200 shadow-sm hover:shadow-md hover:border-slate-300'
+                  }`}
               >
                 {/* Popular Ribbon */}
                 {isPopular && (
@@ -54,18 +53,17 @@ export default function Courses() {
                 )}
 
                 <div className="p-7 sm:p-8 flex flex-col h-full">
-                  
+
                   {/* Card Header */}
                   <div className="flex items-center justify-between gap-2 mb-2">
                     <h3 className="font-heading font-bold text-2xl tracking-tight">
                       {pkg.name}
                     </h3>
                     <span
-                      className={`text-xs font-semibold px-2.5 py-0.5 rounded-full ${
-                        isPopular
-                          ? 'bg-indigo-950 text-indigo-300 border border-indigo-800'
-                          : 'bg-slate-100 text-slate-600'
-                      }`}
+                      className={`text-xs font-semibold px-2.5 py-0.5 rounded-full ${isPopular
+                        ? 'bg-indigo-950 text-indigo-300 border border-indigo-800'
+                        : 'bg-slate-100 text-slate-600'
+                        }`}
                     >
                       {pkg.badge}
                     </span>
@@ -130,11 +128,10 @@ export default function Courses() {
                       href={createWhatsAppLink(pkg.whatsappEnquiry)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm transition-all duration-200 shadow-sm ${
-                        isPopular
-                          ? 'bg-indigo-600 hover:bg-indigo-500 text-white hover:shadow-indigo-500/25'
-                          : 'bg-slate-900 hover:bg-slate-800 text-white'
-                      }`}
+                      className={`w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm transition-all duration-200 shadow-sm ${isPopular
+                        ? 'bg-indigo-600 hover:bg-indigo-500 text-white hover:shadow-indigo-500/25'
+                        : 'bg-slate-900 hover:bg-slate-800 text-white'
+                        }`}
                     >
                       <MessageCircle className="w-4 h-4 text-emerald-400 shrink-0" />
                       <span>Enquire on WhatsApp</span>

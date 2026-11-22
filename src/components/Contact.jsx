@@ -45,13 +45,13 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-20 bg-slate-900 text-white relative overflow-hidden">
-      
+
       {/* Background ambient accents */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Main Banner Header */}
         <div className="max-w-3xl mx-auto text-center mb-14">
           <span className="text-xs font-bold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 px-3.5 py-1 rounded-full border border-indigo-800">
@@ -67,10 +67,10 @@ export default function Contact() {
 
         {/* Contact Layout Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
-          
+
           {/* Left Column: Direct Links & Channels */}
           <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
-            
+
             <div className="bg-slate-800/80 rounded-3xl p-6 sm:p-8 border border-slate-700/80 shadow-lg">
               <h3 className="font-heading font-bold text-xl text-white mb-2">
                 Fastest Direct Channels
@@ -173,7 +173,7 @@ export default function Contact() {
               </div>
 
               <div className="space-y-4">
-                
+
                 {/* Student Age / Grade input */}
                 <div>
                   <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
@@ -199,11 +199,10 @@ export default function Contact() {
                         key={pkg.id}
                         type="button"
                         onClick={() => setSelectedPackage(`${pkg.name} (${pkg.duration})`)}
-                        className={`px-3 py-2.5 rounded-xl text-xs font-semibold text-center border transition-all ${
-                          selectedPackage.includes(pkg.name)
-                            ? 'bg-indigo-600 border-indigo-400 text-white shadow-sm'
-                            : 'bg-slate-900/80 border-slate-700 text-slate-300 hover:border-slate-600'
-                        }`}
+                        className={`px-3 py-2.5 rounded-xl text-xs font-semibold text-center border transition-all ${selectedPackage.includes(pkg.name)
+                          ? 'bg-indigo-600 border-indigo-400 text-white shadow-sm'
+                          : 'bg-slate-900/80 border-slate-700 text-slate-300 hover:border-slate-600'
+                          }`}
                       >
                         <div>{pkg.name}</div>
                         <div className="text-[10px] opacity-75 font-normal mt-0.5">{pkg.duration}</div>
@@ -223,11 +222,10 @@ export default function Contact() {
                         key={mode}
                         type="button"
                         onClick={() => setLearningMode(mode)}
-                        className={`px-3 py-2 rounded-xl text-xs font-semibold text-center border transition-all ${
-                          learningMode === mode
-                            ? 'bg-indigo-600 border-indigo-400 text-white'
-                            : 'bg-slate-900/80 border-slate-700 text-slate-300 hover:border-slate-600'
-                        }`}
+                        className={`px-3 py-2 rounded-xl text-xs font-semibold text-center border transition-all ${learningMode === mode
+                          ? 'bg-indigo-600 border-indigo-400 text-white'
+                          : 'bg-slate-900/80 border-slate-700 text-slate-300 hover:border-slate-600'
+                          }`}
                       >
                         {mode}
                       </button>
